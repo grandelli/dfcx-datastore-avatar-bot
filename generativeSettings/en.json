@@ -1,0 +1,22 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Default"
+  },
+  "languageCode": "en",
+  "knowledgeConnectorSettings": {
+    "business": "Car Rental Company",
+    "agent": "Car Rental Virtual Assistant",
+    "agentIdentity": "virtual assistant",
+    "businessDescription": "a company whose core business is car rental",
+    "agentScope": "on booking cars or providing information about the car fleet",
+    "llmModelSettings": {
+    
+    },
+    "groundingSettings": {
+      "disabled": true
+    },
+    "mainLlmConfig": {
+    
+    }
+  }
+}
