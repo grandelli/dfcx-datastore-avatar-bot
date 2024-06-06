@@ -2,6 +2,12 @@
   "fallbackSettings": {
     "selectedPrompt": "Default"
   },
+  "generativeSafetySettings": {
+    "bannedPhrases": [ {
+      "text": "avoid to talk about competitor car rental companies, such as AVIS and Hertz",
+      "languageCode": "en"
+    } ]
+  },
   "languageCode": "en",
   "knowledgeConnectorSettings": {
     "business": "Car Rental Company",
@@ -9,11 +15,8 @@
     "agentIdentity": "virtual assistant",
     "businessDescription": "a company whose core business is car rental",
     "agentScope": "on booking cars or providing information about the car fleet",
-    "llmModelSettings": {
-    
-    },
     "groundingSettings": {
-      "disabled": true
+      "groundingConfidence": "VERY_LOW"
     },
     "mainLlmConfig": {
     
