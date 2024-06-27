@@ -10,7 +10,16 @@
   "transitionRoutes": [ {
     "condition": "true",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "payload": {
+          "ujet": {
+            "action": "escalation",
+            "escalation_reason": "by_virtual_agent",
+            "type": "action"
+          }
+        },
+        "languageCode": "en"
+      } ]
     },
     "targetPage": "End Session",
     "name": "a79b3da4-2ba0-4c98-a0dc-4f5599329896"

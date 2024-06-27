@@ -3,10 +3,21 @@
     "selectedPrompt": "Default"
   },
   "generativeSafetySettings": {
-    "bannedPhrases": [ {
-      "text": "avoid to talk about competitor car rental companies, such as AVIS and Hertz",
-      "languageCode": "en"
-    } ]
+    "raiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    }
   },
   "languageCode": "en",
   "knowledgeConnectorSettings": {
@@ -16,10 +27,13 @@
     "businessDescription": "a company whose core business is car rental",
     "agentScope": "on booking cars or providing information about the car fleet",
     "groundingSettings": {
-      "groundingConfidence": "VERY_LOW"
+      "groundingConfidence": "MEDIUM"
     },
     "mainLlmConfig": {
-    
+      "configSet": "gemini_15_flash_001"
     }
+  },
+  "llmModelSettings": {
+  
   }
 }
